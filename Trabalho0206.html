@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stollas v2</title>
+
+<style>
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+        background-color: #f2d16d;
+    }
+    
+
+    header{ /* só p criar a barinha q vai ficar tudo*/
+        padding: 10px;
+        text-align: justify;
+        background-color: #442f73;
+        color: #f2bb13;
+    }
+
+    header div{ /*arruma a img e o texto*/
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    header img{ /* essa imagem tem q funcionar antes q eu enlouqueça*/
+        height: 50px;
+        width: 50px;
+    }
+
+    .container {
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center; 
+        padding: 20px 0; 
+    }
+
+    .Texto {
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center; 
+        text-align: center;
+        padding: 20px 0; 
+        
+    }
+
+    .caixa{ /*AAAAAAAAAAAAAAAAAAAAA N CENTRALIZAAAA*/
+        background-color: #fff; 
+        margin-left: 36% ;
+        margin-top: 10px;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px; 
+        max-width: 90%; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+        gap: 15px; 
+    }
+
+    form {
+        background-color: #fff; 
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px; 
+        max-width: 90%; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    form h2 {
+        text-align: center;
+        color: #442f73;
+        margin-bottom: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    form label {
+        color: #333;
+        font-weight: bold;
+    }
+
+    form input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    form button {
+        background-color: #f2bb13;
+        color: #442f73;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+        background-color: #e0a90e;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2480/2480894.png" alt="logo">
+            <h3>Stollas</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="Texto">
+            <h1>Stollas, seu guia para o conhecimento.</h1>
+            <p>Um assistente virtual educacional personalizado que usa IA para criar planos de estudo adaptativos para alunos, com conteúdo multimídia, quizzes interativos e acompanhamento do progresso em tempo real.</p>
+            <img src="img.png" alt="foto" height=500px>
+           
+            <div class="caixa">
+            <ul>Vantagens:
+                <li>Personalização completa do conteúdo com base no estilo e ritmo do aluno.</li>
+                <li>Gamificação para engajamento contínuo.</li>
+                <li>Suporte multilíngue e para diversas áreas do conhecimento.</li>
+            </ul>
+            <br>
+            <ul>Funcionalidades:
+                <li>Planos de estudo dinâmicos que se adaptam ao desempenho.</li>
+                <li>Integração com alguns players de Biblioteca digital.</li>
+                <li>Feedback instantâneo e recomendações de melhoria.</li>
+                <li>Comunidade integrada para troca de dúvidas e experiências.</li>
+            </ul>
+        </div>
+
+        </div>
+
+        <div class="container">
+            <form action="#" method="POST"> <h2>Cadastre-se</h2>
+                <input name="nome_completo" type="text" required placeholder="Digite seu nome completo" autofocus>
+                
+                <input name="email" type="email" required placeholder="Digite seu email">
+                
+
+                <label>Gênero: </label> 
+                <div> <input name="genero" type="radio" value="masc" id="masc"> <label for="masc">Masculino</label>
+                    <input name="genero" type="radio" value="fem" id="fem" required> <label for="fem">Feminino</label>
+                    <input name="genero" type="radio" value="NA" id="na" required> <label for="na">Prefiro não falar</label>
+                </div>
+                
+
+                <label for="opcaoInteresse">Interesse em receber notificações:</label>
+                <select name="opcaoInteresse" id="opcaoInteresse" required>
+                     
+                    <option value="1">Sim</option>
+                    <option value="2">Não</option>
+                </select>
+                
+
+                <button name="butao" type="submit">Enviar</button>
+                
+
+            </form>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
